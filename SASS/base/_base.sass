@@ -31,7 +31,7 @@ body
     font-size: 20px
     margin-bottom: 40px
 
-.red-btn
+.red-sub-btn
     text-decoration: none
     padding: 15px
     color: $white
@@ -42,6 +42,107 @@ body
         color: $red
 
 .curve
-    background-color: black
+    background-color: $black
     width: 100px
     height: 50px
+
+
+.boxes
+    padding-top: 7%
+    text-align: center
+
+.boxes .box
+    margin: 40px
+    // border: 3px solid #e6e6e6
+    border-radius: 5%
+    padding: 20px
+    box-shadow: 0 0 20px #e6e6e6
+    &:hover
+        -ms-transform: scale(1.2)
+        -webkit-transform: scale(1.2)
+        -o-transform: scale(1.2)
+        -moz-transform: scale(1.2)
+        transform: scale(1.2)
+        transition-duration: .2s
+
+.fa.fa-train, .fa.fa-car, .fa.fa-plane
+    background-color: $white
+    color: $red
+
+.boxes .box a
+    color: $red
+    text-decoration: none
+
+.destinations
+    background-color: #e6e6e6
+    margin: 20px
+    padding-bottom: 150px
+
+.destinations .banner
+    background-color: $red
+    color: $white
+    padding: 0 10px
+
+.picture-modal
+    margin: -20px 0px 0 0px
+    position: relative
+    margin-top: -100px
+    margin-right: 10px
+
+.picture-modal-heading
+    font-weight: bold
+
+.destination-info
+    position: absolute
+    background-color: $white
+    padding: 10px 10px 40px 10px
+    margin-top: -5px
+    p 
+        margin-bottom: 40px 
+
+.recom-places
+    background-color: $white
+
+.more-info-btb-div
+    text-align: center  
+
+.btn-red
+    width: 100%
+    font-size: 12px 
+    text-decoration: none
+    background-color: $red
+    color: $white
+    padding: 5% 30%
+    transition-duration: .4s
+    &:hover
+        background-color: darken($red, 20%)
+    
+
+.destinations .recommend-img
+    width: 100%
+.img-thumbnails
+    overflow: scroll
+    // width: 100%
+    height: 350px
+
+.thumbnails 
+    background-color: #e6e6e6
+    width: 75px
+    margin-bottom: -5px 
+.test
+    margin: 20px
+    background-color: #e6e6e6
+    margin: 10px 
+    font-weight: bold
+    font-size: 20px
+    cursor: pointer
+    &:hover
+        color: $red
+
+.test .tn-text
+    font-weight: bold
+    font-size: 20px
+    padding-left: 40px
+    padding-right: 40px
+    margin-top: -10px 
+    text-align: center
