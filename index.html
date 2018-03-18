@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/c5b9554837.js"></script>
     <link rel="stylesheet" href="CSS/app.css" />
-    <!-- <script src="main.js"></script> -->
 </head>
 <body>
     <nav class="navbar">
@@ -19,7 +18,9 @@
             <li class="navbar-list-item"> <a href="">DESTINATIONS</a></li>
             <li class="navbar-list-item"> <a href="">STORIES</a></li>
             <li class="navbar-list-item"> <a href="">CONTACT US</a></li>
+            <li class="navbar-list-item"><a class="menuBars" href="javascript:void(0);">&#9776;</a></li>
         </ul>
+        <!-- <a class="menuBars" href="javascript:void(0);">&#9776;</a> -->
     </nav>
     <section class="availibility-form">
         <div class="container">
@@ -27,15 +28,24 @@
                 <div class="col-12">
                     <div class="card">
                             <form>
-                                <div class="col-12">
+                                <div class="row">
+                                <div class="col-4">
                                 <i class="fa fa-map"></i>
                                 <input type="text" name="destination" id="destination" placeholder="Enter your destination">
+                                </div>
+
+                                <div class="col-4">
                                 <i class="fa fa-calendar"></i>
                                 <input type="text" name="check-in" id="checkIn" value="Check-In" disabled>
+                                </div>
+                                
+                                <div class="col-4">
                                 <i class="fa fa-calendar"></i>
                                 <input type="text" name="check-out" id="checkOut" value="Check-Out" disabled><br>
+                                </div>
                             </div>
-                            <div class="col-12">
+                            <div class="row">
+                            <div class="col-3">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <select name="adults" id="adults">
                                     <option value="Adult">Adult</option>
@@ -49,6 +59,8 @@
                                     <option value="8">8</option>
                                     <option value="9">9</option>
                                 </select>
+                                </div>
+                                <div class="col-3">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <select name="children" id="children">
                                         <option value="Children">Children</option>
@@ -62,6 +74,8 @@
                                         <option value="8">8</option>
                                         <option value="9">9</option>
                                     </select>
+                                </div>
+                                <div class="col-3">
                                 <i class="fa fa-bed"></i>
                                 <select name="room" id="room">
                                         <option value="Room">Room</option>
@@ -75,8 +89,11 @@
                                         <option value="8">8</option>
                                         <option value="9">9</option>
                                     </select>
+                                </div>
+                                <div class="col-3">
                                 <input type="submit" value="Check Availability" id="available">
-                                <!-- <div class="row">
+                            </div>
+                                <div class="row">
                                 <div class="col-6">
                                     <div class="disclaimer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -87,8 +104,9 @@
                                             <a class="help-link-text" href=""> <strong>Need Help?</strong></a>
                                         </div>
                                     </div>
-                                </div> -->
                                 </div>
+                                </div>
+                            </div>
                             </form>
                     </div>
                 </div>
@@ -292,5 +310,6 @@
             <p>Copyrigh &copy your comapny - Developed by Johnny Duran <img class="footer-me-pic" src="assets/img/me-white.png" alt=""></p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
