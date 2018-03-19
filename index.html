@@ -29,23 +29,23 @@
                     <div class="card">
                             <form>
                                 <div class="row">
-                                <div class="col-4">
+                                <div class="col-4 availibility-top-input">
                                 <i class="fa fa-map"></i>
-                                <input type="text" name="destination" id="destination" placeholder="Enter your destination">
+                                <input type="text" name="destination" id="destination" placeholder="Where To?">
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-4 availibility-top-input">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" name="check-in" id="checkIn" value="Check-In" disabled>
+                                <input type="text" name="check-in" id="checkIn" value="Check-In">
                                 </div>
                                 
-                                <div class="col-4">
+                                <div class="col-4 availibility-top-input">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" name="check-out" id="checkOut" value="Check-Out" disabled><br>
+                                <input type="text" name="check-out" id="checkOut" value="Check-Out"><br>
                                 </div>
                             </div>
                             <div class="row">
-                            <div class="col-3">
+                            <div class="col-3 availibility-bottom-input">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <select name="adults" id="adults">
                                     <option value="Adult">Adult</option>
@@ -60,7 +60,7 @@
                                     <option value="9">9</option>
                                 </select>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 availibility-bottom-input">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <select name="children" id="children">
                                         <option value="Children">Children</option>
@@ -75,7 +75,7 @@
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 availibility-bottom-input">
                                 <i class="fa fa-bed"></i>
                                 <select name="room" id="room">
                                         <option value="Room">Room</option>
@@ -90,16 +90,16 @@
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-3 availibility-bottom-input">
                                 <input type="submit" value="Check Availability" id="available">
                             </div>
                                 <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 availibility-help">
                                     <div class="disclaimer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 availibility-help">
                                         <div class="help-link">
                                             <a class="help-link-text" href=""> <strong>Need Help?</strong></a>
                                         </div>
@@ -129,7 +129,7 @@
     <section class="boxes">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 infomation-box">
                     <div class="box">
                         <div class="fontAwe-icons">
                             <i class="fa fa-train fa-3x" aria-hidden="true"></i>
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 infomation-box">
                     <div class="box">
                         <div class="fontAwe-icons">
                             <i class="fa fa-plane fa-3x" aria-hidden="true"></i>
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 infomation-box">
                     <div class="box">
                         <div class="fontAwe-icons">
                             <i class="fa fa-car fa-3x" aria-hidden="true"></i>
@@ -201,27 +201,57 @@
                             <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
                         </div>
                         <div class="img-thumbnails">
-                            <div class="test"><img class="thumbnails" src="assets/img/tn-1.jpg" alt="">  EUROPE</div>
-                            <div class="test"><img class="thumbnails" src="assets/img/tn-2.jpg" alt="">  ASIA</div>
-                            <div class="test"><img class="thumbnails" src="assets/img/tn-3.jpg" alt="">  ARRICA</div>
-                            <div class="test"><img class="thumbnails" src="assets/img/tn-4.jpg" alt="">  SOUTH AMERICA</div>
-                            <div class="test"><img class="thumbnails" src="assets/img/tn-1.jpg" alt="">  NORTH AMERICA</div>
-                            <div class="test"><img class="thumbnails" src="assets/img/tn-2.jpg" alt="">  AUSTRILA</div>  
+                            <div class="row recom-places-box">
+                                <div class="col-5">
+                                    <img class="thumbnails" src="assets/img/tn-1.jpg" alt="">
+                                </div>
+                                    <div class="col-6 places">EUROPE</div>
+                                </div>
+                                <div class="row recom-places-box">
+                                        <div class="col-5">
+                                            <img class="thumbnails" src="assets/img/tn-2.jpg" alt="">
+                                        </div>
+                                            <div class="col-6 places">ASIA</div>
+                                        </div>
+                                <div class="row recom-places-box">
+                                        <div class="col-5">
+                                            <img class="thumbnails" src="assets/img/tn-3.jpg" alt="">
+                                        </div>
+                                            <div class="col-6 places">ARRICA</div>
+                                        </div>
+                                <div class="row recom-places-box">
+                                        <div class="col-5">
+                                            <img class="thumbnails" src="assets/img/tn-4.jpg" alt="">
+                                        </div>
+                                            <div class="col-6 places">SOUTH AMERICA</div>
+                                        </div>
+                                <div class="row recom-places-box">
+                                        <div class="col-5">
+                                            <img class="thumbnails" src="assets/img/tn-1.jpg" alt="">
+                                        </div>
+                                            <div class="col-6 places">AUSTRILA</div>
+                                        </div>
+                                <div class="row recom-places-box">
+                                        <div class="col-5">
+                                            <img class="thumbnails" src="assets/img/tn-2.jpg" alt="">
+                                        </div>
+                                            <div class="col-6 places">AUSTRILA</div>
+                                        </div>
+                                </div>
                         </div>
-                    </div>
                 </div>
         </div>
     </section>
     <section class="videoSection">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-8 youtube-video">
                     <div class="video">
                         <iframe width="80%" height="315" src="https://www.youtube.com/embed/ZA28Ww_iriQ" 
                          allowfullscreen></iframe>
                          </div>
                          </div>
-                    <div class="col-4">
+                    <div class="col-4 youtube-video-text">
                     <div class="video-text">
                         <h3 class="video-text-header">Morbi egestas nibh elit tempor</h3>
                         <p class="video-text-p">Donec lorem turpis, bibendum sed quam eu, pretium gravida mauris. Morbi egestas nibh elit, 

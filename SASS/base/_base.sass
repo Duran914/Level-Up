@@ -14,15 +14,17 @@ body
     background-color: $red
     text-align: center
     padding: 50px
-    // -webkit-transform: skewx(2deg)
-    // -moz-transform: skewY(2deg)
-    // -ms-transform: skewY(2deg)
-    // -o-transform: skewY(2deg)
+    -webkit-transform: skewx(5deg)
+    -moz-transform: skewY(5deg)
+    -ms-transform: skewY(5deg)
+    -o-transform: skewY(5deg)
     transform: skewY(5deg)
-    // transform: skewY(2deg)
+
     
 .banner-content
     transform: skewY(-5deg)
+    @media screen and (max-width: $sm-break-point)
+        margin-top: -100px
 
 .heading
     font-size: 40px
@@ -46,10 +48,14 @@ body
     width: 100px
     height: 50px
 
+    
 
 .boxes
     padding-top: 7%
     text-align: center
+    @media screen and (max-width: $lg-break-point)
+        .infomation-box
+            width: 100%  
 
 .boxes .box
     margin: 40px
@@ -64,6 +70,15 @@ body
         -moz-transform: scale(1.2)
         transform: scale(1.2)
         transition-duration: .2s
+    @media screen and (max-width: $lg-break-point)
+        margin: 20px
+        &:hover
+            -ms-transform: scale(1.1)
+            -webkit-transform: scale(1.1)
+            -o-transform: scale(1.1)
+            -moz-transform: scale(1.1)
+            transform: scale(1.1)
+            transition-duration: .2s
 
 .fa.fa-train, .fa.fa-car, .fa.fa-plane
     background-color: $white
@@ -73,6 +88,8 @@ body
 .boxes .box a
     color: $red
     text-decoration: none
+
+
 
 .destinations
     background-color: #e6e6e6
@@ -124,38 +141,40 @@ body
     overflow: scroll
     // width: 100%
     height: 350px
+    margin: 10px
 
 .thumbnails 
     background-color: #e6e6e6
     width: 75px
-    margin-bottom: -5px 
-.test
-    margin: 20px
-    background-color: #e6e6e6
-    margin: 10px 
+    // margin-bottom: -5px 
+.places
     font-weight: bold
-    font-size: 20px
+    font-size: 25px
     cursor: pointer
     &:hover
         color: $red
 
-.test .tn-text
-    font-weight: bold
-    font-size: 20px
-    padding-left: 40px
-    padding-right: 40px
-    margin-top: -10px 
-    text-align: center
+.recom-places-box
+    background-color: $grey
+    margin-bottom: 10px 
+
 .videoSection
     background-image: url(/assets/img/city.jpeg)
     background-size: cover
     padding-top: 100px
-    padding-bottom: 150px
+    padding-bottom: 50px
+    @media screen and (max-width: $lg-break-point)
+        .youtube-video, .youtube-video-text
+            width: 100%
+            text-align: center 
 .video-text
-    padding: 95px 30px
+    padding: 120px 30px 50px 30px
     background-color: $red
     font-weight: bolder
     box-shadow: 0 0 40px $black
+    @media screen and (max-width: $lg-break-point)
+        margin: 50px
+    
 
 .video-text-header
     color: $white
@@ -166,7 +185,6 @@ body
     margin-bottom: 40px
     color: $white
     font-size: 15px
-    
 
 .video
     margin-left: 5px 
@@ -249,8 +267,4 @@ body
 
 .contact-us input[type=submit]
     margin-left: 10%
-
-
-
-
    

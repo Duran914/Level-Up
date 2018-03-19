@@ -27,5 +27,6 @@ function openSideNav() {
         });
          menuBars.classList = "menuBars";
          menuBars.innerHTML = "&#9776;";
+         document.body.style.marginRight = "0px";
     }
 }
