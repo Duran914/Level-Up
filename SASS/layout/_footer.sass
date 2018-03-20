@@ -1,8 +1,73 @@
+.footer
+    background-color: $dark-blue
+    padding: 20px
+    @media screen and (max-width: $xlg-break-point)
+        .footer-text-col, .social-icons-col
+            width: 100%
+            text-align: center
+        .footer-links
+            margin-top: 20px 
+            text-align: center 
+        .footer-policy
+            text-align: center
+        
+
 .footer-text
     background-color: $dark-blue
     color: $red
-    padding: 10px
     font-size: 20px
+
+.footer-policy
+    color: $white
+    opacity: .2
+
+.social-icons
+    float: right
+    margin-left: 20px
+    @media screen and (max-width: $xlg-break-point)
+        float: none
+    i
+        margin: 0 10px 10px 0
+        font-size: 25px
+        color: darken($white, 20px)
+        cursor: pointer
+        transition: .4s
+        &:hover
+            color: $red
+.social-media-text
+    color: $red
+    margin-right: 20px
+    font-size: 20px
+    float: right
+    @media screen and (max-width: $xlg-break-point)
+        float: none
+
+.icons
+    margin-top: 10px
+    float: right
+    @media screen and (max-width: $xlg-break-point)
+        float: none
+
+
+.footer-list-link
+    text-decoration: none
+    color: darken($white, 20px)
+    margin: 0 10px 0 0
+    transition: .4s
+    &:hover
+        color: darken($white, 40px)
+
 .footer-me-pic
     width: 25px
     margin-bottom: -7px
+    opacity: .7
+
+.my-logo-text
+    color: $red
+    opacity: .7
+    text-decoration: none
+.my-info
+    float: right
+    @media screen and (max-width: $xlg-break-point)
+        float: none
+        text-align: center
