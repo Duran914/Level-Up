@@ -35,19 +35,19 @@
 
                                 <div class="col-4 availibility-top-input">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" name="check-in" id="checkIn" value="Check-In">
+                                <input type="text" name="check-in" id="checkIn" placeholder="Check-In">
                                 </div>
                                 
                                 <div class="col-4 availibility-top-input">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" name="check-out" id="checkOut" value="Check-Out"><br>
+                                <input type="text" name="check-out" id="checkOut" placeholder="Check-Out"><br>
                                 </div>
                             </div>
                             <div class="row">
                             <div class="col-3 availibility-bottom-input">
                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                <select name="adults" id="adults">
-                                    <option value="Adult">Adult</option>
+                                <select class="adult" name="adults" id="adults">
+                                    <option value="Adult">Adult &#8964</span></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -61,8 +61,8 @@
                                 </div>
                                 <div class="col-3 availibility-bottom-input">
                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                <select name="children" id="children">
-                                        <option value="Children">Children</option>
+                                <select class="child" name="children" id="children">
+                                        <option value="Children">Children &#8964</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -76,8 +76,8 @@
                                 </div>
                                 <div class="col-3 availibility-bottom-input">
                                 <i class="fa fa-bed"></i>
-                                <select name="room" id="room">
-                                        <option value="Room">Room</option>
+                                <select class="room" name="room" id="room">
+                                        <option value="Room">Room &#8964</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -246,8 +246,9 @@
             <div class="row">
                 <div class="col-8 youtube-video">
                     <div class="video">
-                        <iframe height="315" src="https://www.youtube.com/embed/ZA28Ww_iriQ" 
-                         allowfullscreen></iframe>
+                        <video controls>
+                            <source src="assets/img/video.mp4" type="video/mp4">
+                          </video>
                          </div>
                          </div>
                     <div class="col-4 youtube-video-text">
@@ -318,15 +319,20 @@
             <div class="row">
                 <div class="col-6 gmap-col">
                     <div class="gmap">
-                        <img src="assets/img/map.jpg" alt="">
+                        <img src="assets/img/map.png" alt="">
                     </div>
                 </div>
                 <div class="col-6 contact-form-col">
                     <div class="contact-form">
-                        <form action="" method="" id="contact-us-form">
+                        <div class="errors"></div>
+                        <form id="contact-us-form">
+                            <div class="errors name"></div>
                             <input type="text" name="" id="name" value="" placeholder="Name">
+                            <div class="errors email"></div>
                             <input type="email" name="" id="email" value="" placeholder="Email">
+                            <div class="errors subject"></div>
                             <input type="text" name="" id="subject" value="" placeholder="Subject">
+                            <div class="errors textarea"></div>
                             <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
                             <input type="submit" name="" id="submit-form" placeholder="Send Message">
                         </form>

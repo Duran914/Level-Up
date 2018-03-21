@@ -5,13 +5,13 @@ const menuBars = document.querySelector('.menuBars');
       navbarUl = document.querySelector('.navbar-list');
       navbarLinks = document.querySelectorAll('.navbar-list-item');
       // Availiability form variables
-      availabilityForm = document.querySelector('#availability-form');
+      availabilityForm = document.querySelector('#availiability-form');
       availabilityFormDestination = document.querySelector('#destination');
       availabilityFormCheckIn = document.querySelector('#checkIn');
       availabilityFormCheckOut = document.querySelector('#checkOut');
-      availabilityFormAdultsNum = document.querySelector('#adults');
-      availabilityFormChildrenNum = document.querySelector('#children');
-      availabilityFormRoom = document.querySelector('#room');
+      availabilityFormAdultsNum = document.querySelector('select.adult');
+      availabilityFormRoom = document.querySelector('select.room');
+      
       // Sign up form variables
       contactUsForm = document.querySelector('#contact-us-form');
       contactUsName = document.querySelector('#name');
@@ -19,6 +19,7 @@ const menuBars = document.querySelector('.menuBars');
       contactUsSubject = document.querySelector('#subject');
       contactUsTextarea = document.querySelector('#textarea');
       contactUsSubmit = document.querySelector('#submit-form');
+
       
 
 // Event listeners
@@ -28,46 +29,49 @@ contactUsForm.addEventListener('submit', submitContactForm);
 
 // Room availability validation
 function checkAvailability(e){
+    
     if (availabilityFormDestination.value == "") {
-
+        availabilityFormDestination.style.border = "2px solid red";
+        e.preventDefault();
     }
     if (availabilityFormCheckIn.value == "") {
-        
+        availabilityFormCheckIn.style.border = "2px solid red";
+        e.preventDefault();
     }
     if (availabilityFormCheckOut.value == "") {
-        
+        availabilityFormCheckOut.style.border = "2px solid red";  
+        e.preventDefault();
     }
-    if (availabilityFormAdultsNum.value == "") {
-        
+    if (availabilityFormAdultsNum.value == "Adult") {
+        availabilityFormAdultsNum.style.borderColor = "red";
+        e.preventDefault();
     }
-    if (availabilityFormChildrenNum.value == "") {
-        
+    if (availabilityFormRoom.value == "Room") {
+        availabilityFormRoom.style.borderColor = "red";
+        e.preventDefault();
     }
-    if (availabilityFormRoom.value == "") {
-        
-    }
-    
-    e.preventDefault();
+
 }
 
-// Contact form validation
+// basic Contact form validation
 function submitContactForm(e){
-    if (contactUsName.value == "") {
-
+    if (contactUsName.value == "" ) {
+        document.querySelector('.errors.name').innerHTML = "&#187; Please enter your name";
+         e.preventDefault();
     }
     if (contactUsEmail.value == "") {
-        
+        document.querySelector('.errors.email').innerHTML = "&#187; Please enter your email";
+         e.preventDefault();
     }
-    if (contactUsSubject.value == "") {
-        
+    if (contactUsSubject.value == "" ) {
+        document.querySelector('.errors.subject').innerHTML = "&#187; Please enter a subject";
+         e.preventDefault();
     }
-    if (contactUsTextarea.value == "") {
+    if (contactUsTextarea.value == "" ) {
+        document.querySelector('.errors.textarea').innerHTML = "&#187; Please enter a message";
+         e.preventDefault();
     }
-    e.preventDefault();
-    console.log("contact form test");
-    
 }
-
 
 // Slide out navbar function
 function openSideNav() {

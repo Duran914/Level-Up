@@ -4,12 +4,14 @@
     margin: 150px 90px
     padding: 30px 30px
     text-align: center
+    @media screen and (max-width: $lg-break-point)
+        margin: 50px 10px
     @media screen and (max-width: $md-break-point)
-        margin: 100px 10px
+        margin: 50px 0px
         padding: 30px 30px   
 
  
-.card input[type=text]
+.card input[type=text], .card input[type=date]
     width: 70%
     padding: 10px
     font-size: 15px
@@ -21,9 +23,12 @@
     
 
 
-
 .card select
+    -webkit-appearance: none
+    -moz-appearance: none
+    font-size: 15px
     width: 80%
+    padding-left: 5px
     height: 45px
     border-style: solid
     border-color: #e6e6e6
