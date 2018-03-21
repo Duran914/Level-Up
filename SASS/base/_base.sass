@@ -3,7 +3,7 @@ body
     margin: 0
     padding: 0
 
-.availibility-form
+.availability-form
     background: url(/assets/img/top-bg.jpg)
     background-size: covers
 
@@ -42,12 +42,6 @@ body
         background-color: $white
         color: $red
 
-.curve
-    background-color: $black
-    width: 100px
-    height: 50px
-
-    
 
 .boxes
     padding-top: 7%
@@ -106,7 +100,6 @@ body
     padding: 0 10px 
 
 .picture-modal
-    margin: 0
     position: relative
     // margin-right: 30px
     margin-right: 4%
@@ -114,8 +107,11 @@ body
         // margin: 20px
         margin: 2%
         padding-bottom: 0px 
-    // @media screen and (max-width: $md-break-point)
-    //     padding-bottom: 0px 
+    @media screen and (max-width: $md-break-point)
+        margin: auto
+        width: 70%
+    @media screen and (max-width: $sm-break-point)
+        width: 100%
 
 .picture-modal-heading
     font-weight: bold
@@ -182,7 +178,7 @@ body
     background-size: cover
     // padding: 100px 0 100px 0
     padding: 6% 0
-    @media screen and (max-width: $lg-break-point)
+    @media screen and (max-width: $xlg-break-point)
         // padding: 50px 0 50px 0
         padding: 3% 0
         .youtube-video, .youtube-video-text
@@ -194,13 +190,13 @@ body
     background-color: $red
     font-weight: bolder
     box-shadow: 0 0 40px $black
-    @media screen and (max-width: $lg-break-point)
+    @media screen and (max-width: $xlg-break-point)
         margin: 50px
     @media screen and (max-width: $sm-break-point)
         margin: 10px 0px
     
 .video video
-    width: 90%
+    width: 80%
     @media screen and (max-width: $sm-break-point)
         width: 100%
 
@@ -253,9 +249,9 @@ body
     padding: 25px
     margin-top: 50px
     @media screen and (max-width: $xlg-break-point)
-        margin-top: 10px
+        width: 80%
+        margin: auto
 
- 
 
 .stories-img
     width: 100%
@@ -341,8 +337,6 @@ body
     border: none
     background-color: darken($white, 4%)
     margin-bottom: 15px
-
-
 
 .contact-us textarea
     resize: none

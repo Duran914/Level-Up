@@ -4,8 +4,8 @@
 const menuBars = document.querySelector('.menuBars');
       navbarUl = document.querySelector('.navbar-list');
       navbarLinks = document.querySelectorAll('.navbar-list-item');
-      // Availiability form variables
-      availabilityForm = document.querySelector('#availiability-form');
+      // Availability form variables
+      availabilityForm = document.querySelector('#availability-form');
       availabilityFormDestination = document.querySelector('#destination');
       availabilityFormCheckIn = document.querySelector('#checkIn');
       availabilityFormCheckOut = document.querySelector('#checkOut');
@@ -26,20 +26,51 @@ const menuBars = document.querySelector('.menuBars');
 menuBars.addEventListener('click', openSideNav);
 availabilityForm.addEventListener('submit', checkAvailability);
 contactUsForm.addEventListener('submit', submitContactForm);
+navbarUl.addEventListener('click', scrollTo);
 
+
+function scrollTo(goto){
+    let link = goto.target.innerHTML;
+
+     if (link == 'HOME') {
+        document.querySelector('.availability-form').scrollIntoView(
+            {behavior: "smooth",
+              block: "start"});
+              closeSideNav();
+     }
+     else if (link === 'DESTINATIONS') {
+        document.querySelector('.destinations').scrollIntoView(
+            {behavior: "smooth",
+              block: "start"});
+              closeSideNav();
+     }
+     else if (link === 'STORIES') {
+        document.querySelector('.c3p0').scrollIntoView(
+            {behavior: "smooth",
+              block: "start"});
+              closeSideNav();
+     }
+     else if (link === 'CONTACT US') {
+        document.querySelector('.contact-us').scrollIntoView(
+            {behavior: "smooth",
+              block: "start"});
+              closeSideNav();
+     }
+}
 // Room availability validation
 function checkAvailability(e){
-    
+    let dateFormat =/^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{2,4})$/;
+
     if (availabilityFormDestination.value == "") {
-        availabilityFormDestination.style.border = "2px solid red";
+        availabilityFormDestination.style.border = "1px solid red";
         e.preventDefault();
     }
-    if (availabilityFormCheckIn.value == "") {
-        availabilityFormCheckIn.style.border = "2px solid red";
+    if (availabilityFormCheckIn.value == "" || dateFormat.test(availabilityFormCheckIn.value) == false) {
+        availabilityFormCheckIn.style.border = "1px solid red";
         e.preventDefault();
     }
-    if (availabilityFormCheckOut.value == "") {
-        availabilityFormCheckOut.style.border = "2px solid red";  
+    if (availabilityFormCheckOut.value == "" || dateFormat.test(availabilityFormCheckOut.value == false)) {
+        availabilityFormCheckOut.style.border = "1px solid red"; 
         e.preventDefault();
     }
     if (availabilityFormAdultsNum.value == "Adult") {
@@ -53,7 +84,7 @@ function checkAvailability(e){
 
 }
 
-// basic Contact form validation
+// Basic contact form validation
 function submitContactForm(e){
     if (contactUsName.value == "" ) {
         document.querySelector('.errors.name').innerHTML = "&#187; Please enter your name";
@@ -73,7 +104,7 @@ function submitContactForm(e){
     }
 }
 
-// Slide out navbar function
+// Opens sidebar navbar
 function openSideNav() {
     if (navbarUl.className == "navbar-list") {
         navbarUl.classList += " sidebar-nav";
@@ -82,16 +113,24 @@ function openSideNav() {
         });
          menuBars.classList += " side-bar-nav-menuBars";
          menuBars.innerHTML = "&#120;";
+         document.body.style.width = "205px";
+         document.body.style.marginRight = "205px";
+         document.body.style.width = "100%";
+         document.body.style.overflow = "hidden";
     }
     else{
-        navbarUl.className == "navbar-list"
-        navbarUl.classList = "navbar-list";
-        navbarLinks.forEach(function(link){
-            link.classList = "navbar-list-item";
-        });
-         menuBars.classList = "menuBars";
-         menuBars.innerHTML = "&#9776;";
-         document.body.style.marginRight = "0px";
-    }
+        closeSideNav();
+  }
 }
 
+// Closes side navbar 
+function closeSideNav(){
+    navbarUl.className == "navbar-list"
+    navbarUl.classList = "navbar-list";
+    navbarLinks.forEach(function(link){
+        link.classList = "navbar-list-item";
+    });
+     menuBars.classList = "menuBars";
+     menuBars.innerHTML = "&#9776;";
+     document.body.style.overflow = "visible";
+}

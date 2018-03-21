@@ -6,6 +6,7 @@
     <title>Level</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/c5b9554837.js"></script>
+    <link rel="shortcut icon" href="/assets/img/mini-logo.ico">
     <link rel="stylesheet" href="CSS/app.css" />
 </head>
 <body>
@@ -14,37 +15,37 @@
             <img src="/assets/img/main-logo.png" alt=""><div class="brand-name">LEVEL</div>
         </div>
         <ul class="navbar-list">
-            <li class="navbar-list-item"> <a href="">HOME</a></li>
-            <li class="navbar-list-item"> <a href="">DESTINATIONS</a></li>
-            <li class="navbar-list-item"> <a href="">STORIES</a></li>
-            <li class="navbar-list-item"> <a href="">CONTACT US</a></li>
+            <li class="navbar-list-item"><a id="homeLink">HOME</a></li>
+            <li class="navbar-list-item"><a id="destinationsLink">DESTINATIONS</a></li>
+            <li class="navbar-list-item"><a id="storiesLink">STORIES</a></li>
+            <li class="navbar-list-item"><a id="contactUsLink">CONTACT US</a></li>
             <li class="navbar-list-item"><a class="menuBars" href="javascript:void(0);">&#9776;</a></li>
         </ul>
     </nav>
-    <section class="availibility-form">
+    <section class="availability-form">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                            <form id="availiability-form">
+                            <form id="availability-form">
                                 <div class="row">
-                                <div class="col-4 availibility-top-input">
+                                <div class="col-4 availability-top-input">
                                 <i class="fa fa-map"></i>
                                 <input type="text" name="destination" id="destination" placeholder="Where To?">
                                 </div>
 
-                                <div class="col-4 availibility-top-input">
+                                <div class="col-4 availability-top-input">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" name="check-in" id="checkIn" placeholder="Check-In">
+                                <input type="text" name="check-in" id="checkIn" placeholder="MM/DD/YY">
                                 </div>
                                 
-                                <div class="col-4 availibility-top-input">
+                                <div class="col-4 availability-top-input">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" name="check-out" id="checkOut" placeholder="Check-Out"><br>
+                                <input type="text" name="check-out" id="checkOut" placeholder="MM/DD/YY"><br>
                                 </div>
                             </div>
                             <div class="row">
-                            <div class="col-3 availibility-bottom-input">
+                            <div class="col-3 availability-bottom-input">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <select class="adult" name="adults" id="adults">
                                     <option value="Adult">Adult &#8964</span></option>
@@ -59,7 +60,7 @@
                                     <option value="9">9</option>
                                 </select>
                                 </div>
-                                <div class="col-3 availibility-bottom-input">
+                                <div class="col-3 availability-bottom-input">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <select class="child" name="children" id="children">
                                         <option value="Children">Children &#8964</option>
@@ -74,7 +75,7 @@
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="col-3 availibility-bottom-input">
+                                <div class="col-3 availability-bottom-input">
                                 <i class="fa fa-bed"></i>
                                 <select class="room" name="room" id="room">
                                         <option value="Room">Room &#8964</option>
@@ -89,18 +90,18 @@
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="col-3 availibility-bottom-input">
+                                <div class="col-3 availability-bottom-input">
                                 <input type="submit" value="Check Availability" id="available">
                             </div>
                                 <div class="row">
-                                <div class="col-6 availibility-help">
+                                <div class="col-6 availability-help">
                                     <div class="disclaimer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
                                 </div>
-                                <div class="col-6 availibility-help">
+                                <div class="col-6 availability-help">
                                         <div class="help-link">
-                                            <a class="help-link-text" href=""> <strong>Need Help?</strong></a>
+                                            <a class="help-link-text" href="javascript:void(0);"> <strong>Need Help?</strong></a>
                                         </div>
                                     </div>
                                 </div>
@@ -373,13 +374,13 @@
       <div class="row">
           <div class="col-12">
               <div class="footer-links">
-                  <a href="#" class="footer-list-link">Travel Agents</a>
-                  <a href="#" class="footer-list-link">Group Partners</a>
-                  <a href="#" class="footer-list-link">Partner Hotels</a>
-                  <a href="#" class="footer-list-link">Hotel Developers</a>
-                  <a href="#" class="footer-list-link">Affiliates</a>
-                  <a href="#" class="footer-list-link">Investors</a>
-                  <a href="#" class="footer-list-link">Community</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Travel Agents</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Group Partners</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Partner Hotels</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Hotel Developers</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Affiliates</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Investors</a>
+                  <a href="javascript:void(0);" class="footer-list-link">Community</a>
               </div>
           </div>
       </div>

@@ -6,6 +6,8 @@
 
 .navbar-logo
     margin-left: 40px
+    @media screen and (max-width: $lg-break-point)
+        margin-left: 10px
 
 .brand-name
     font-size: 30px
@@ -24,21 +26,28 @@
     top: 0
     right: 0
     position: fixed
-    background-color: #111
+    background-color: $black
     overflow-x: hidden
-    // transition: 0.5s
-    padding-left: 0px
+    padding-left: 0
     padding-top: 90px
     z-index: 1
+
+.slideOutRight
+    animation-name: slideOutRight
+    animation-duration: 0.8s
+    animation-iteration-count: 1
+    transition-timing-function: ease-out
     
 .navbar-list-item
     display: inline
     border-color: #000
+    cursor: pointer
 
 .navbar-list-item a:not(.menuBars)
     color: $black
     text-decoration: none
     padding: 30px 10px 43px 10px
+    // transition: .4s
     &:hover
         color: $white
         background-color: $red
@@ -66,10 +75,13 @@
         display: inline
 
 .side-bar-nav-menuBars
+    color: $white
     display: inline
     position: absolute
-    transition: 0.3
+    // transition: .3s
     margin-top: 40px 
     top: 0     
     font-size: 36px
-    padding: 4px 15px 
+    padding: 4px 15px
+    &:hover
+        color: $white
