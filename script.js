@@ -9,7 +9,7 @@ const menuBars = document.querySelector('.menuBars');
       availabilityFormDestination = document.querySelector('#destination');
       availabilityFormCheckIn = document.querySelector('#checkIn');
       availabilityFormCheckOut = document.querySelector('#checkOut');
-      availabilityFormAdultsNum = document.querySelector('select.adult');
+      availabilityFormGuests = document.querySelector('select.guest');
       availabilityFormRoom = document.querySelector('select.room');
       
       // Sign up form variables
@@ -73,11 +73,11 @@ function checkAvailability(e){
         availabilityFormCheckOut.style.border = "1px solid red"; 
         e.preventDefault();
     }
-    if (availabilityFormAdultsNum.value == "Adult") {
-        availabilityFormAdultsNum.style.borderColor = "red";
+    if (availabilityFormGuests.value == "Guests") {
+        availabilityFormGuests.style.borderColor = "red";
         e.preventDefault();
     }
-    if (availabilityFormRoom.value == "Room") {
+    if (availabilityFormRoom.value == "Rooms") {
         availabilityFormRoom.style.borderColor = "red";
         e.preventDefault();
     }

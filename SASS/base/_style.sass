@@ -3,10 +3,12 @@ body
     margin: 0
     padding: 0
 
+// AVAILABILITY FORM SECTION
 .availability-form
     background: url(/assets/img/top-bg.jpg)
     background-size: covers
 
+// Help banner 
 .help-banner
     margin-top: 100px 
     color: $white
@@ -41,8 +43,10 @@ body
     &:hover
         background-color: $white
         color: $red
+    @media screen and (max-width: $xs-break-point)
+        padding: 5px
 
-
+// Train, Plane, and Car popup boxes   
 .boxes
     padding-top: 7%
     text-align: center
@@ -51,7 +55,6 @@ body
             width: 100%  
 
 .boxes .box
-    // margin: 40px
     margin: 12%
     border-radius: 5%
     padding: 20px
@@ -83,6 +86,8 @@ body
     color: $red
     text-decoration: none
 
+// DESTINATIONS SECTION
+
 .destinations
     background-color: #e6e6e6
     background-size: cover
@@ -94,11 +99,7 @@ body
         .picture-modal-col
             width: 100%
 
-.destinations .banner
-    background-color: $red
-    color: $white
-    padding: 0 10px 
-
+// Picture modals
 .picture-modal
     position: relative
     // margin-right: 30px
@@ -118,7 +119,6 @@ body
 
 .destination-info
     background-color: $white
-    // padding: 10px 10px 40px 10px
     padding: 2% 2% 8% 2%
     margin-top: -5px
     p 
@@ -126,17 +126,10 @@ body
     @media screen and (max-width: $md-break-point)
         margin-bottom: 20px
 
-.recom-places
-    background-color: $white
-    position: relative
-    border-bottom: 2px solid $white
-    width: 100%
-    @media screen and (max-width: $xlg-break-point)
-        display: none
-
 .more-info-btb-div
-    text-align: center  
+    text-align: center 
 
+//get more info button
 .btn-red
     width: 100%
     font-size: 12px 
@@ -146,15 +139,29 @@ body
     padding: 2% 10%
     transition-duration: .4s
     &:hover
-        background-color: darken($red, 20%)
-    
+        background-color: darken($red, 20%) 
+
+// recomendations side scroller
+
+.destinations .banner
+    background-color: $red
+    color: $white
+    padding: 0 10px 
+
+.recom-places
+    background-color: $white
+    position: relative
+    border-bottom: 2px solid $white
+    width: 100%
+    @media screen and (max-width: $xlg-break-point)
+        display: none
 
 .destinations .recommend-img
     width: 100%
 
+// small thumnail images in sidebar
 .img-thumbnails
     overflow: scroll
-    // width: 100%
     height: 350px
     margin: 10px
 
@@ -173,13 +180,13 @@ body
     background-color: $grey
     margin-bottom: 10px
 
+// VIDEO SECTION
+
 .videoSection
     background-image: url(/assets/img/city.jpeg)
     background-size: cover
-    // padding: 100px 0 100px 0
-    padding: 6% 0
+    padding: 10% 0
     @media screen and (max-width: $xlg-break-point)
-        // padding: 50px 0 50px 0
         padding: 3% 0
         .youtube-video, .youtube-video-text
             width: 100%
@@ -210,7 +217,7 @@ body
     color: $white
     font-size: 15px
 
-
+// STORIES SECTION
 .c3p0
     background-image: url(/assets/img/c3po-bg.jpg)
     background-size: cover
@@ -228,7 +235,7 @@ body
             width: 100%
             margin: 0px 20px
 
-
+// Stories sections large title
 .c3po-header
     color: $black
     font-size: 50px
@@ -237,12 +244,14 @@ body
     font-size: 40px
     margin-top: -40px
 
+// title styling
 .stories-title
     margin-left: 40px 
     padding: 0
     @media screen and (max-width: $md-break-point)
-        margin-left: 0px   
+        margin-left: 0px 
 
+// stories section mail content
 .stories
     background-color: rgba(242, 242, 242, 0.4)
     box-shadow: 0 0 20px #ccc
@@ -252,7 +261,7 @@ body
         width: 80%
         margin: auto
 
-
+// stories images
 .stories-img
     width: 100%
     padding-bottom: 40px
@@ -263,6 +272,7 @@ body
     @media screen and (max-width: $sm-break-point)
         width: 100%
 
+// individual story heading
 .stories-heading
     font-size: 18px
     color: $red
@@ -270,6 +280,7 @@ body
         font-size: 25px
         padding-top: -30px
 
+// individual story content
 .stories-text
     width: 100%
     margin-top: -60px 
@@ -283,6 +294,7 @@ body
         margin-left: 0px 
         margin-bottom: 8% 
 
+// CONTACT US SECTION
 .contact-us
     background-image: url(/assets/img/bottom-bg.jpg)
     background-size: cover
@@ -296,6 +308,7 @@ body
         .gmap
             text-align: center
 
+// contact us form
 .contact-form
     background-color: $white
     padding: 20px
@@ -308,8 +321,11 @@ body
     @media screen and (max-width: $lg-break-point)
         margin-right: 0px
         margin-top: 20px 
-    
 
+.contact-form form
+    margin-right: 60px
+
+// map image
 .gmap img
     width: 100%
     height: 300px
@@ -323,12 +339,8 @@ body
         text-align: center  
     @media screen and (max-width: $md-break-point)
         width: 100%
-
-
-.contact-form form
-    margin-right: 60px
     
-
+// form input 
 .contact-us input[type=text], .contact-us input[type=email]
     display: block
     padding: 10px 50px 10px 10px

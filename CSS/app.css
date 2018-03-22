@@ -42,6 +42,9 @@ body {
   .red-sub-btn:hover {
     background-color: #ffffff;
     color: #ee5057; }
+  @media screen and (max-width: 450px) {
+    .red-sub-btn {
+      padding: 5px; } }
 
 .boxes {
   padding-top: 7%;
@@ -94,11 +97,6 @@ body {
     .destinations .picture-modal-col {
       width: 100%; } }
 
-.destinations .banner {
-  background-color: #ee5057;
-  color: #ffffff;
-  padding: 0 10px; }
-
 .picture-modal {
   position: relative;
   margin-right: 4%; }
@@ -127,15 +125,6 @@ body {
     .destination-info {
       margin-bottom: 20px; } }
 
-.recom-places {
-  background-color: #ffffff;
-  position: relative;
-  border-bottom: 2px solid #ffffff;
-  width: 100%; }
-  @media screen and (max-width: 975px) {
-    .recom-places {
-      display: none; } }
-
 .more-info-btb-div {
   text-align: center; }
 
@@ -149,6 +138,20 @@ body {
   transition-duration: 0.4s; }
   .btn-red:hover {
     background-color: #c5131b; }
+
+.destinations .banner {
+  background-color: #ee5057;
+  color: #ffffff;
+  padding: 0 10px; }
+
+.recom-places {
+  background-color: #ffffff;
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+  width: 100%; }
+  @media screen and (max-width: 975px) {
+    .recom-places {
+      display: none; } }
 
 .destinations .recommend-img {
   width: 100%; }
@@ -177,7 +180,7 @@ body {
 .videoSection {
   background-image: url(/assets/img/city.jpeg);
   background-size: cover;
-  padding: 6% 0; }
+  padding: 10% 0; }
   @media screen and (max-width: 975px) {
     .videoSection {
       padding: 3% 0; }
@@ -317,6 +320,9 @@ body {
       margin-right: 0px;
       margin-top: 20px; } }
 
+.contact-form form {
+  margin-right: 60px; }
+
 .gmap img {
   width: 100%;
   height: 300px;
@@ -333,9 +339,6 @@ body {
   @media screen and (max-width: 769px) {
     .gmap img {
       width: 100%; } }
-
-.contact-form form {
-  margin-right: 60px; }
 
 .contact-us input[type=text], .contact-us input[type=email] {
   display: block;
@@ -397,17 +400,11 @@ body {
   top: 0;
   right: 0;
   position: fixed;
-  background-color: #000000;
+  background-color: #262626;
   overflow-x: hidden;
   padding-left: 0;
   padding-top: 90px;
   z-index: 1; }
-
-.slideOutRight {
-  animation-name: slideOutRight;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-  transition-timing-function: ease-out; }
 
 .navbar-list-item {
   display: inline;
@@ -570,6 +567,10 @@ body {
   .footer-list-link:hover {
     color: #999999; }
 
+.footer-logo {
+  width: 30px;
+  margin-bottom: -6px; }
+
 .footer-me-pic {
   width: 25px;
   margin-bottom: -7px;
@@ -600,15 +601,16 @@ body {
       margin: 50px 0px;
       padding: 30px 30px; } }
 
-.card input[type=text], .card input[type=date] {
+.card input[type=text] {
   width: 70%;
   padding: 10px;
   font-size: 15px;
   border-style: solid;
+  border-width: 1px;
   border-color: #e6e6e6;
   margin-bottom: 15px; }
   @media screen and (max-width: 875px) {
-    .card input[type=text], .card input[type=date] {
+    .card input[type=text] {
       width: 80%; } }
 
 .card select {
@@ -624,23 +626,37 @@ body {
   background-color: #ffffff; }
   @media screen and (max-width: 875px) {
     .card select {
-      width: 85%;
-      margin-bottom: 2%; } }
+      width: 65%;
+      margin-bottom: 6%; } }
+  @media screen and (max-width: 545px) {
+    .card select {
+      width: 85%; } }
 
 .card input[type=submit] {
   background-color: #ee5057;
   color: #ffffff;
   border: none;
-  padding: 10px;
+  padding: 14px;
   font-size: 15px;
   cursor: pointer;
-  transition-duration: 0.4s; }
+  transition-duration: 0.4s;
+  width: 75%;
+  margin-top: 20px; }
   .card input[type=submit]:hover {
     background-color: #c5131b; }
+  @media screen and (max-width: 875px) {
+    .card input[type=submit] {
+      width: 75%; } }
+  @media screen and (max-width: 545px) {
+    .card input[type=submit] {
+      width: 85%; } }
 
-.fa {
+.availability-form .fa {
   color: #ee5057;
   font-size: 20px; }
+  @media screen and (max-width: 875px) {
+    .availability-form .fa {
+      margin: 0 12%; } }
 
 .help-link {
   float: right;
@@ -654,7 +670,14 @@ body {
   opacity: 0.5; }
 
 @media screen and (max-width: 875px) {
-  .availability-top-input, .availability-bottom-input {
+  .availability-top-input {
+    width: 100%; } }
+@media screen and (max-width: 875px) {
+  .availability-bottom-input {
+    width: 50%;
+    margin: auto; } }
+@media screen and (max-width: 545px) {
+  .availability-bottom-input {
     width: 100%; } }
 @media screen and (max-width: 769px) {
   .availability-help {

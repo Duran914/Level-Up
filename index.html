@@ -30,25 +30,25 @@
                             <form id="availability-form">
                                 <div class="row">
                                 <div class="col-4 availability-top-input">
-                                <i class="fa fa-map"></i>
+                                <i class="fa fa-map"> Destination</i>
                                 <input type="text" name="destination" id="destination" placeholder="Where To?">
                                 </div>
 
                                 <div class="col-4 availability-top-input">
-                                <i class="fa fa-calendar"></i>
+                                <i class="fa fa-calendar"> Check In</i>
                                 <input type="text" name="check-in" id="checkIn" placeholder="MM/DD/YY">
                                 </div>
                                 
                                 <div class="col-4 availability-top-input">
-                                <i class="fa fa-calendar"></i>
+                                <i class="fa fa-calendar"> Check Out</i>
                                 <input type="text" name="check-out" id="checkOut" placeholder="MM/DD/YY"><br>
                                 </div>
                             </div>
                             <div class="row">
-                            <div class="col-3 availability-bottom-input">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <select class="adult" name="adults" id="adults">
-                                    <option value="Adult">Adult &#8964</span></option>
+                            <div class="col-4 availability-bottom-input">
+                                <i class="fa fa-user" aria-hidden="true"> Guests</i>
+                                <select class="guest" name="guests" id="guests">
+                                    <option value="Guests">Guests &#8964</span></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -60,25 +60,10 @@
                                     <option value="9">9</option>
                                 </select>
                                 </div>
-                                <div class="col-3 availability-bottom-input">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <select class="child" name="children" id="children">
-                                        <option value="Children">Children &#8964</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                    </select>
-                                </div>
-                                <div class="col-3 availability-bottom-input">
-                                <i class="fa fa-bed"></i>
+                                <div class="col-4 availability-bottom-input">
+                                <i class="fa fa-bed"> Rooms</i>
                                 <select class="room" name="room" id="room">
-                                        <option value="Room">Room &#8964</option>
+                                        <option value="Rooms">Rooms &#8964</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -90,8 +75,8 @@
                                         <option value="9">9</option>
                                     </select>
                                 </div>
-                                <div class="col-3 availability-bottom-input">
-                                <input type="submit" value="Check Availability" id="available">
+                                <div class="col-4 availability-bottom-input">
+                                <input type="submit" class="check" value="Check Availability" id="available">
                             </div>
                                 <div class="row">
                                 <div class="col-6 availability-help">
@@ -348,7 +333,7 @@
         <div class="row">
             <div class="col-7 footer-text-col">
         <div class="footer-text">
-            <p>Copyright &copy Your Comapany - All Rights Reserved 2018</p>
+            <p>Copyright &copy Level <img class="footer-logo" src="/assets/img/mini-logo.ico" alt=""> - All Rights Reserved 2018</p>
         </div>
         </div>
         <div class="col-5 social-icons-col">
