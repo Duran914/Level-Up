@@ -5,7 +5,7 @@ body {
   padding: 0; }
 
 .availability-form {
-  background: url(/assets/img/top-bg.jpg);
+  background: url(../assets/img/top-bg.jpg);
   background-size: covers; }
 
 .help-banner {
@@ -178,7 +178,7 @@ body {
   margin-bottom: 10px; }
 
 .videoSection {
-  background-image: url(/assets/img/city.jpeg);
+  background-image: url(../assets/img/city.jpeg);
   background-size: cover;
   padding: 10% 0; }
   @media screen and (max-width: 975px) {
@@ -217,7 +217,7 @@ body {
   font-size: 15px; }
 
 .c3p0 {
-  background-image: url(/assets/img/c3po-bg.jpg);
+  background-image: url(../assets/img/c3po-bg.jpg);
   background-size: cover; }
   @media screen and (max-width: 975px) {
     .c3p0 .stories-header {
@@ -295,7 +295,7 @@ body {
       margin-bottom: 8%; } }
 
 .contact-us {
-  background-image: url(/assets/img/bottom-bg.jpg);
+  background-image: url(../assets/img/bottom-bg.jpg);
   background-size: cover;
   padding: 40px; }
   @media screen and (max-width: 545px) {
