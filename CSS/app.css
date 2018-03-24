@@ -178,7 +178,7 @@ body {
   margin-bottom: 10px; }
 
 .videoSection {
-  background-image: url(../assets/img/city.jpeg);
+  background-image: url(../assets/img/nightlife.jpeg);
   background-size: cover;
   padding: 10% 0; }
   @media screen and (max-width: 975px) {
@@ -403,8 +403,11 @@ body {
   background-color: #262626;
   overflow-x: hidden;
   padding-left: 0;
-  padding-top: 90px;
+  padding-top: 100px;
   z-index: 1; }
+  @media screen and (max-width: 769px) {
+    .sidebar-nav {
+      text-align: center; } }
 
 .navbar-list-item {
   display: inline;
@@ -420,7 +423,8 @@ body {
     background-color: #ee5057; }
   @media screen and (max-width: 769px) {
     .navbar-list-item a:not(.menuBars) {
-      display: none; } }
+      display: none;
+      text-align: center; } }
 
 .sidebar-nav-a a:not(.menuBars) {
   color: #ffffff;
@@ -430,6 +434,10 @@ body {
   text-decoration: none;
   font-size: 25px;
   transition: 0.3s; }
+  @media screen and (max-width: 769px) {
+    .sidebar-nav-a a:not(.menuBars) {
+      padding: 10px;
+      margin-bottom: 5px; } }
 
 .menuBars {
   display: none;
@@ -447,13 +455,20 @@ body {
 .side-bar-nav-menuBars {
   color: #ffffff;
   display: inline;
-  position: absolute;
   margin-top: 40px;
   top: 0;
   font-size: 36px;
-  padding: 4px 15px; }
+  padding: 4px 15px;
+  transition-duration: 0.3s; }
   .side-bar-nav-menuBars:hover {
     color: #ffffff; }
+  @media screen and (max-width: 769px) {
+    .side-bar-nav-menuBars {
+      padding: 0 45%;
+      background-color: #ee5057; }
+      .side-bar-nav-menuBars:hover {
+        background-color: #ee5057;
+        color: #262626; } }
 
 .row {
   width: 100%;

@@ -117,6 +117,10 @@ function openSideNav() {
          document.body.style.marginRight = "205px";
          document.body.style.width = "100%";
          document.body.style.overflow = "hidden";
+         document.querySelector('.availability-form').style.opacity = ".3";
+         document.querySelectorAll('#availability-form select, #availability-form input').forEach(function(x){
+            x.setAttribute("disabled", "true");
+            }) 
     }
     else{
         closeSideNav();
@@ -133,4 +137,8 @@ function closeSideNav(){
      menuBars.classList = "menuBars";
      menuBars.innerHTML = "&#9776;";
      document.body.style.overflow = "visible";
+     document.querySelector('.availability-form').style.opacity = "1";
+     document.querySelectorAll('#availability-form select, #availability-form input').forEach(function(x){
+        x.removeAttribute("disabled");
+    }) 
 }
