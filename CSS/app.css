@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 0; }
 
+input:focus, select:focus {
+  outline: none; }
+
 .availability-form {
   background: url(../assets/img/top-bg.jpg);
   background-size: covers; }
@@ -617,8 +620,9 @@ body {
       padding: 30px 30px; } }
 
 .card input[type=text] {
+  position: relative;
   width: 70%;
-  padding: 10px;
+  padding: 15px;
   font-size: 15px;
   border-style: solid;
   border-width: 1px;
@@ -706,11 +710,12 @@ body {
   word-spacing: 4px; }
 
 .calendar-box {
-  background-color: salmon;
-  margin: 0 100px;
+  margin: auto;
   position: absolute;
-  width: 50%;
-  top: 285px; }
+  width: 100%;
+  top: 22px;
+  z-index: 1;
+  box-shadow: 0 0 15px #737373; }
 
 ul {
   list-style-type: none; }
@@ -730,15 +735,17 @@ ul {
   text-transform: uppercase;
   letter-spacing: 3px; }
 
-.month .prev {
+.month .prevMonth {
   float: left;
   padding-top: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  cursor: pointer; }
 
-.month .next {
+.month .nextMonth {
   float: right;
   padding-top: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  cursor: pointer; }
 
 .weekdays {
   margin: 0;
@@ -747,7 +754,7 @@ ul {
 
 .weekdays li {
   display: inline-block;
-  width: 13.5%;
+  width: 12.5%;
   color: #666;
   text-align: center; }
 
@@ -759,7 +766,7 @@ ul {
 .days li {
   list-style-type: none;
   display: inline-block;
-  width: 13.6%;
+  width: 12.6%;
   text-align: center;
   margin-bottom: 5px;
   font-size: 12px;
@@ -774,10 +781,14 @@ ul {
 .selectDay {
   cursor: pointer; }
 
-.fa-times-circle {
+.clearXIn, .clearXOut {
+  position: relative;
   cursor: pointer;
   margin-left: -31px;
   padding: 10px 5px; }
+
+.availability-top-input:nth-child(n+2) {
+  position: relative; }
 
 /* Add media queries for smaller screens */
 @media screen and (max-width: 720px) {
